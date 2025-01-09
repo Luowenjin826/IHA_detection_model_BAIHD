@@ -3,11 +3,11 @@ import numpy as np
 import pickle
 from fpdf import FPDF
 
-with open('mean_sd_value.pkl', 'rb') as f:
+with open('web_app/pages/mean_sd_value.pkl', 'rb') as f:
     mean_std_df = pickle.load(f)
 
 # Load the pre-trained model from model.pkl
-with open('naive_bayes_model.pkl', 'rb') as f:
+with open('web_app/pages/naive_bayes_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Convert the DataFrame into a dictionary for mean and standard deviation lookups
