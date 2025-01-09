@@ -19,8 +19,8 @@ def create_pdf(input_data, prediction_result, prediction_proba, advice, renin_ty
     pdf.add_page()
 
     # Add and set Unicode fonts
-    pdf.add_font('SIMYOU', '', 'SIMYOU.TTF', uni=True)  # For Chinese
-    pdf.add_font('DejaVu', '', 'DejaVuSans.ttf', uni=True)  # For English and Italian
+    pdf.add_font('SIMYOU', '', 'web_app/pages/SIMYOU.TTF', uni=True)  # For Chinese
+    pdf.add_font('DejaVu', '', 'web_app/pages/DejaVuSans.ttf', uni=True)  # For English and Italian
 
     # Set the font based on the selected language
     if language == "English":
@@ -49,7 +49,7 @@ def create_pdf(input_data, prediction_result, prediction_proba, advice, renin_ty
     for line in advice.split('\n'):
         pdf.cell(200, 10, txt=line, ln=True)
 
-    pdf_file = "prediction_report.pdf"
+    pdf_file = "web_app/reports/prediction_report.pdf"
     pdf.output(pdf_file)
     return pdf_file
 
