@@ -6,7 +6,7 @@ st.set_page_config(
 
 st.write("# Welcome! ")
 
-st.image("background.jpg", caption="IHA detection app")
+st.image("web_app/background.jpg", caption="IHA detection app")
 
 st.markdown(
     """
