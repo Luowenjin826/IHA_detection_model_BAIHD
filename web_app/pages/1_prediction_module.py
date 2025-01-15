@@ -73,7 +73,7 @@ if language == "English":
     renin_type_text = "Select Renin Type"
     renin_concentration_text = "Renin Concentration (uIU/ml)"
     renin_activity_text = "Renin Activity (ng/mL/h)"
-    ascvd_text = "ASCVD"
+    ascvd_text = "Coronary heart disease"
     predict_button_text = "Predict"
     predicted_disease_text = "Predicted Disease: "
 elif language == "中文":
@@ -91,7 +91,7 @@ elif language == "中文":
     renin_type_text = "选择肾素类型"
     renin_concentration_text = "肾素浓度 (uIU/ml)"
     renin_activity_text = "肾素活性 (ng/mL/h)"
-    ascvd_text = "动脉粥样硬化心血管疾病"
+    ascvd_text = "冠心病或脑卒中"
     predict_button_text = "预测"
     predicted_disease_text = "预测疾病: "
 elif language == "Italiano":
@@ -109,7 +109,7 @@ elif language == "Italiano":
     renin_type_text = "Seleziona Tipo di Renina"
     renin_concentration_text = "Concentrazione di Renina (uIU/ml)"
     renin_activity_text = "Attività di Renina (ng/mL/h)"
-    ascvd_text = "ASCVD"
+    ascvd_text = "Malattia coronarica o ictus"
     predict_button_text = "Predici"
     predicted_disease_text = "Malattia Predetta: "
 
@@ -257,7 +257,7 @@ if st.button(predict_button_text):
         'LDL': ldl,
         'FBG': fbg,
         'Renin Value': renin_value,
-        'ASCVD': ascvd
+        'Coronary heart disease': ascvd
     }
 
     # Generate PDF report
