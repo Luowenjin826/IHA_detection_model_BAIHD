@@ -6,10 +6,10 @@ st.set_page_config(
 
 st.write("# Welcome! ")
 
-st.image("web_app/background.jpg", caption="IHA detection app")
+st.image("web_app/background.jpg", caption="PA detection app")
 
 st.markdown(
     """
-    Welcome to use IHA detection app
+    Welcome to use PA detection app
 """
 )
